@@ -11,6 +11,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
          th, td {
             border: 1px solid black;
@@ -27,6 +28,14 @@
             background-color: rgb(90, 90, 90);
             color: white;
         }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(59, 59, 59);
+        }
+        tbody > tr:nth-child(even) {
+            background-color: lightgrey;
+        }
     </style>
 </head>
 <body>
@@ -42,14 +51,22 @@
         </thead>
         <tbody>
             <td>São Paulo</td>
-            <td>45 919 049</td>
+            <td>45.919.049</td>
             <tr>
                 <td>Mina gerais</td>
-                <td>21 168 791</td>
+                <td>21.168.791</td>
             </tr>
             <tr>
                 <td>Rio de janeiro</td>
-                <td>17 264 943</td>
+                <td>17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14.837.064</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td>7.015.354</td>
             </tr>
         </tbody>
         <tfoot>
@@ -59,5 +76,6 @@
             </tr>
         </tfoot>
     </table>
+    
 </body>
 </html>
